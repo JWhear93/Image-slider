@@ -57,3 +57,8 @@ $('.slider > img').mouseenter(function () {
 $('.slider > img').mouseleave(function () {
 	startSlider();
 });
+
+function brightMode () {
+	$('body').toggleClass('bright-mode');
+	$('.wrapper > a').toggleClass('arrow-mode');
+}

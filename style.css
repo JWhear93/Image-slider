@@ -19,10 +19,10 @@
 
 a {
 	padding: 5px 10px;
-	background: black;
+	background: white;
 	margin-top: -30px;
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 a.left {
@@ -31,4 +31,17 @@ a.left {
 
 a.right {
 	float: right;
+}
+
+a.mid {
+	float: right;
+}
+
+.bright-mode {
+	background: black;
+}
+
+.arrow-mode {
+	background: black;
+	color: white;
 }
