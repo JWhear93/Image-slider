@@ -62,3 +62,13 @@ function brightMode () {
 	$('body').toggleClass('bright-mode');
 	$('.wrapper > a').toggleClass('arrow-mode');
 }
+
+$('html').keydown(function (event){
+	if (event.which == 39) {
+		event.preventDefault();
+		next();
+	} else if (event.which == 37) {
+		event.preventDefault();
+		prev();
+	}
+});
