@@ -1,0 +1,1 @@
+Simple image slider made with jQuery as a part of course practice.
