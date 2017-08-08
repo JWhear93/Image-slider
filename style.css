@@ -3,6 +3,13 @@
 	margin: 0 auto;
 }
 
+.bottomNav {
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+	height: 35px;
+}
+
 .slider {
 	width: 1280px;
 	height: 720px;
@@ -26,15 +33,15 @@ a {
 }
 
 a.left {
-	float: left;
+	display: inline-block;
 }
 
 a.right {
-	float: right;
+	
 }
 
 a.mid {
-	float: right;
+	
 }
 
 .bright-mode {
@@ -44,4 +51,14 @@ a.mid {
 .arrow-mode {
 	background: black;
 	color: white;
+}
+
+.b-mode {
+	color: green;
+}
+
+.radioNav {
+	width: 80px;
+	margin: 0 auto;
+	display: inline-block;
 }

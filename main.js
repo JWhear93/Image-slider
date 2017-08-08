@@ -8,15 +8,16 @@ $(document).ready(function () {
 
 function startSlider () {
 	count = $('.slider > img').length;
-	loop = setInterval(function () {
+	loop = setInterval(function () {		
 
 		if(sliderNext > count) {
 			sliderNext=1;
 			sliderInt=1;
 		}
-
+		
 		$('.slider > img').fadeOut(300);
 		$('.slider > img#' + sliderNext).fadeIn(300);
+		
 		sliderInt=sliderNext;
 		sliderNext=sliderNext+1;
 	}, 3000)
@@ -60,7 +61,7 @@ $('.slider > img').mouseleave(function () {
 
 function brightMode () {
 	$('body').toggleClass('bright-mode');
-	$('.wrapper > a').toggleClass('arrow-mode');
+	$('.wrapper > .bottomNav > a').toggleClass('arrow-mode');
 }
 
 $('html').keydown(function (event){
@@ -71,4 +72,14 @@ $('html').keydown(function (event){
 		event.preventDefault();
 		prev();
 	}
+});
+
+$('#b1').on('click', this, function () {
+	showSlide(1);
+});
+$('#b2').on('click', this, function () {
+	showSlide(2);
+});
+$('#b3').on('click', this, function () {
+	showSlide(3);
 });
